@@ -1,0 +1,8 @@
+project: megahit
+target: megahit
+image: ghcr.io/rnshah9/playground:megahit
+
+cmds:
+  - cmd: /root/megahit/build/megahit_core read2sdbg --read_lib_file @@ --host_mem=80
+    env:
+      DISABLE_SMOKETEST: '1'
